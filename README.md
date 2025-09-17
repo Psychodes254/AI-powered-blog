@@ -83,3 +83,33 @@ The AI agent uses context from the user's environment to make informed decisions
 *   **Error Analysis:** The agent can analyze error messages from shell commands to understand what went wrong and formulate a recovery plan. When `npm test` failed, the agent could have analyzed the `ENOENT` error to understand that the command was run from the wrong directory.
 
 *   **Iterative Refinement:** The agent can refine its work based on user feedback. When told that the `MarkdownRenderer` component was "not finished", the agent analyzed the component, identified potential improvements (like adding styling), and provided an updated version.
+
+## Features Implemented
+
+*   **Blog Post Rendering:** Converts Markdown files from the `_posts` directory into HTML pages.
+*   **Dynamic Routing:** Generates a unique page for each blog post based on its filename.
+*   **Syntax Highlighting:** Applies syntax highlighting to code blocks within blog posts using `highlight.js`.
+*   **Homepage:** Displays a list of all blog posts with summaries.
+*   **Responsive Design:** Styled with Tailwind CSS for a clean, responsive layout.
+*   **Theme Switcher:** A dark/light mode theme switcher.
+
+## Technologies Used
+
+*   **Next.js:** A React framework for building server-side rendered and static web applications.
+*   **TypeScript:** A typed superset of JavaScript that compiles to plain JavaScript.
+*   **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
+*   **Markdown-it:** A Markdown parser for converting Markdown to HTML.
+*   **highlight.js:** A syntax highlighter for code blocks.
+*   **Jest:** A JavaScript testing framework.
+
+## Notes on AI Usage
+
+The development of this blog was heavily reliant on an AI CLI agent. The agent was used for a variety of tasks, including:
+
+*   **Scaffolding the project:** The initial Next.js project was set up by the AI.
+*   **Implementing features:** The AI wrote the code for rendering Markdown, creating dynamic routes, and building React components.
+*   **Writing tests:** The AI generated the Jest configuration and wrote unit tests for the application's data-fetching logic.
+*   **Debugging:** The AI helped diagnose and fix errors encountered during development.
+*   **Documentation:** This README file was created and updated by the AI.
+
+The AI agent's ability to understand natural language prompts, interact with the file system, and execute shell commands was crucial to the successful completion of this project.
